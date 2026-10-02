@@ -8,6 +8,7 @@ import {
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { DatePipe } from '@angular/common';
+import { firstValueFrom } from 'rxjs';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -107,9 +108,9 @@ export class Chat {
       .map((t) => ({ role: t.role, content: t.content }));
 
     try {
-      const resp: ChatResponse = await this.api
-        .chat({ message: text, session_id: this.sessionId(), history })
-        .toPromise();
+      const resp = await firstValueFrom(
+        this.api.chat({ message: text, session_id: this.sessionId(), history })
+      );
       if (!resp) throw new Error('Réponse vide du serveur');
       const assistantTurn: Turn = {
         role: 'assistant',
