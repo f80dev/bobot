@@ -16,6 +16,14 @@ Chaque fichier `.md` = un thème. Les sections délimitées par `## ` deviennent
 | `theorie-attachement.md` | Bowlby, Ainsworth, styles d'attachement |
 | `blessure-psychique.md` | Types de trauma, dissociation, M. Salmona |
 | `deontologie-limits.md` | Cadre déontologique, numéros d'urgence, périmètre |
+| `emdr-neurobiologie-imagerie.md` | Boukezzi, Rousseau, Verger : IRMf, PET-FDG, substrats biologiques |
+| `emdr-trauma-complexe-cptsd.md` | TSPT-c, dissociation, Lavandier 2023, Rolling 2024, Dellucci 2016 |
+| `emdr-urgence-catastrophe.md` | Protocoles immédiats (R-TEP, URG-EMDR), attentat, urgences, COVID |
+| `emdr-migrants-deplaces.md` | Chauliac 2025, Vignaud 2023, Zampieri 2023, EMDR-SP |
+| `emdr-accouchement-postpartum.md` | ESPT du post-partum, Merg-Essadi 2025, Krings-George 2013 |
+| `emdr-therapies-integrees-comparaison.md` | Brainspotting, MOSAIC, hypnose, intégrative |
+| `emdr-enfants-adolescents.md` | Rolling 2024, Sorel 2022, Bozkurt, protocoles adaptés |
+| `emdr-english-corpus.md` | Index des articles en langue anglaise (Frontiers, Healthcare, EJPT…) |
 
 ## Ajouter une fiche
 
