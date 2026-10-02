@@ -48,3 +48,7 @@ dl.log
 # Scratch artefacts from previous pipelines
 .helix/
 .cache/
+
+# Windows build/push helpers (used on a developer host, not inside the image)
+*.bat
+*.cmd
