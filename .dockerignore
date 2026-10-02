@@ -1,0 +1,50 @@
+# Files / dirs not needed inside the image.
+# Keep the build context small and avoid leaking secrets.
+
+# Git + repo metadata
+.git/
+.gitignore
+.gitattributes
+
+# Python artefacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtualenvs (built fresh inside the image)
+.venv/
+venv/
+env/
+
+# Secrets — never copy them into the image. Pass via Cloud Run
+# --set-secrets or Secret Manager at runtime.
+.env
+*.pem
+*.key
+*.p12
+*.jks
+secrets/
+
+# Local dev / IDE
+.vscode/
+.idea/
+.DS_Store
+
+# Tests (not used at runtime)
+tests/
+
+# Frontend (separate deploy, not served by this API)
+frontend/
+
+# Logs
+*.log
+dl.log
+
+# Scratch artefacts from previous pipelines
+.helix/
+.cache/
