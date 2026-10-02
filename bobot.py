@@ -21,6 +21,7 @@ from pathlib import Path
 from typing import Any
 
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 # Local imports — these all live in the same dir in dev.
@@ -320,6 +321,23 @@ def _run_agent(
 # ---------------------------------------------------------------------------
 
 app = FastAPI(title="Psybot Local Dev", version="0.1.0")
+
+# CORS — allow the Angular dev server (http://localhost:4200) to call /api/*.
+# Adjust the regex/host list before deploying the bot anywhere.
+_ALLOWED_ORIGINS = [
+    "http://localhost:4200",   # Angular CLI dev server
+    "http://127.0.0.1:4200",
+    "http://localhost:8000",   # same-origin (FastAPI auto-serves docs at /docs)
+    "http://127.0.0.1:8000",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=_ALLOWED_ORIGINS,
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_headers=["Content-Type", "Authorization"],
+)
 
 
 class ChatIn(BaseModel):

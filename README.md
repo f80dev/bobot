@@ -8,11 +8,12 @@ RAG (TF-IDF sur `knowledge/`) et la boucle d'agent ReAct (DeepSeek).
 
 ```
 bobot/
-├── bobot.py              # FastAPI app, boucle ReAct, system prompt, routes
-├── llm.py               # Client DeepSeek (réel + mock)
-├── rag.py               # RAG TF-IDF stdlib sur knowledge/
-├── knowledge/           # Fiches .md indexées par le RAG (6 passages)
-├── tests/               # Pytest (mocks, contrat HTTP, anti-régression)
+├── bobot.py           # FastAPI app, boucle ReAct, system prompt, routes
+├── llm.py            # Client DeepSeek (réel + mock)
+├── rag.py            # RAG TF-IDF stdlib sur knowledge/
+├── knowledge/        # Fiches .md indexées par le RAG (6 passages)
+├── frontend/         # Angular 21 + Material UI (chat, history, admin)
+├── tests/            # Pytest (mocks, contrat HTTP, anti-régression)
 ├── requirements.txt
 ├── .env.example
 └── README.md
@@ -75,3 +76,53 @@ Voir `.env.example`.
 - (a) Enrichir `knowledge/emdr.md` avec un paragraphe sur le déroulé d'une séance.
 - (b) Migrer vers `dspy.ReAct` + `BootstrapFewShot` pour l'optimisation auto des few-shots.
 - (c) Ajouter un eval set (10-30 questions EMDR/IR/attachement avec vérité terrain).
+
+## Frontend Angular (frontend/)
+
+Scaffold Angular 21 + Material 21. Standalone components, routing, sidenav
+navigation, signal-based state.
+
+### Quick start
+
+```bash
+cd ~/bobot/frontend
+npm install                                    # one-time
+npm start                                      # http://localhost:4200
+```
+
+Le frontend cible l'API bobot sur `http://localhost:8000` (CORS autorisé côté
+backend — voir `bobot.py:_ALLOWED_ORIGINS`).
+
+### Pages
+
+| Route | Page | Description |
+|---|---|---|
+| `/chat` | `Chat` | Conversation signal-based, historique de session en mémoire, expansion panels pour la trajectoire ReAct, badges d'urgence. |
+| `/history` | `History` | Placeholder — l'historique n'est pas persisté côté serveur. |
+| `/admin` | `Admin` | Health check live : statut, mode mock/réel, max iters, chemin du KB. |
+
+### Structure
+
+```
+frontend/src/app/
+├── app.config.ts        # provideAnimationsAsync, provideHttpClient(withFetch()), zoneless
+├── app.routes.ts        # lazy-loaded chat/history/admin
+├── app.{ts,html,scss}   # Layout : mat-sidenav + mat-toolbar + nav-list
+├── bot-api.service.ts   # HttpClient wrapper (POST /chat, GET /health)
+├── bot-api.types.ts     # Interfaces TypeScript du contrat
+└── pages/
+    ├── chat/            # Signal-based chat UI (FormControl via ngModel + signal)
+    ├── history/         # Stateless placeholder
+    └── admin/           # Health check display
+```
+
+### Configuration
+
+Pour overrider l'URL de l'API (par exemple pointer vers un bot déployé) :
+
+```ts
+// Dans un component ou un service, ajuste l'instance :
+constructor() {
+  inject(BotApiService).apiBase = 'https://bobot.example.com';
+}
+```
