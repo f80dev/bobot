@@ -1,0 +1,44 @@
+<mat-sidenav-container class="app-shell">
+  <mat-sidenav #sidenav mode="side" [opened]="opened()" class="app-sidenav">
+    <mat-toolbar color="primary" class="app-brand">
+      <mat-icon>psychology</mat-icon>
+      <span class="brand-text">bobot</span>
+    </mat-toolbar>
+    <mat-divider />
+    <mat-nav-list>
+      @for (item of nav; track item.path) {
+        <a
+          mat-list-item
+          [routerLink]="item.path"
+          routerLinkActive="active-link"
+          [routerLinkActiveOptions]="{ exact: false }"
+        >
+          <mat-icon matListItemIcon>{{ item.icon }}</mat-icon>
+          <span matListItemTitle>{{ item.label }}</span>
+        </a>
+      }
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content class="app-content">
+    <mat-toolbar color="primary" class="app-topbar">
+      <button
+        mat-icon-button
+        aria-label="Toggle navigation"
+        (click)="toggleNav()"
+      >
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span class="topbar-title">{{ title() }}</span>
+      <span class="topbar-spacer"></span>
+      <a mat-button href="http://localhost:8000/docs" target="_blank" rel="noopener">
+        <mat-icon>api</mat-icon>
+        API docs
+      </a>
+    </mat-toolbar>
+
+    <main class="app-main">
+      <router-outlet />
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>

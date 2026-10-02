@@ -1,0 +1,111 @@
+<div class="chat-page">
+  <mat-card class="chat-card">
+    <mat-card-header>
+      <mat-card-title>Psybot — chat</mat-card-title>
+      <mat-card-subtitle>
+        Session: <code class="session-code">{{ sessionId() ?? '(aucune)' }}</code>
+      </mat-card-subtitle>
+      <div class="header-actions">
+        <button mat-stroked-button (click)="newSession()" [disabled]="busy()">
+          <mat-icon>refresh</mat-icon>
+          Nouvelle conversation
+        </button>
+      </div>
+    </mat-card-header>
+
+    <mat-card-content class="chat-content">
+      <div class="chat-thread">
+        @if (turns().length === 0) {
+          <p class="empty-hint">
+            Posez une question sur l'EMDR, l'intelligence relationnelle, la théorie
+            de l'attachement, la théorie polyvagale, ou la blessure psychique.
+            Psybot s'appuie sur des fiches sourcées et reste informatif.
+          </p>
+        }
+        @for (turn of turns(); track trackByIndex($index)) {
+          <div
+            class="bubble"
+            [class.bubble-user]="turn.role === 'user'"
+            [class.bubble-assistant]="turn.role === 'assistant'"
+            [class.bubble-emergency]="turn.emergency"
+          >
+            <div class="bubble-meta">
+              <strong>{{ turn.role === 'user' ? 'Vous' : 'Psybot' }}</strong>
+              <span class="bubble-time">{{ turn.ts | date: 'HH:mm:ss' }}</span>
+            </div>
+            <div class="bubble-content">{{ turn.content }}</div>
+
+            @if (turn.sources && turn.sources.length > 0) {
+              <div class="sources">
+                <mat-chip-set>
+                  @for (h of turn.sources; track $index) {
+                    <mat-chip>
+                      <mat-icon matChipAvatar>description</mat-icon>
+                      {{ h.title }} <small>· {{ h.source }}</small>
+                    </mat-chip>
+                  }
+                </mat-chip-set>
+              </div>
+            }
+
+            @if (turn.trajectory && turn.trajectory.length > 0) {
+              <mat-expansion-panel class="trajectory">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Trajectoire ReAct ({{ turn.trajectory.length }} étape(s))
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <ol>
+                  @for (step of turn.trajectory; track $index) {
+                    <li>
+                      <strong>{{ step.action }}</strong>
+                      @if (step.args && asObjectKeys(step.args).length > 0) {
+                        <span class="step-args">
+                          ({{ asObjectKeys(step.args).join(', ') }})
+                        </span>
+                      }
+                    </li>
+                  }
+                </ol>
+              </mat-expansion-panel>
+            }
+          </div>
+        }
+        @if (busy()) {
+          <div class="busy-indicator">
+            <mat-spinner diameter="18" />
+            <span>Psybot réfléchit…</span>
+          </div>
+        }
+      </div>
+
+      <mat-divider />
+
+      <form class="composer" (ngSubmit)="send()">
+        <mat-form-field appearance="outline" class="composer-field">
+          <mat-label>Votre message</mat-label>
+          <textarea
+            matInput
+            rows="2"
+            maxlength="1500"
+            [ngModel]="draft()"
+            (ngModelChange)="onDraftChange($event)"
+            name="draft"
+            placeholder="C'est quoi l'EMDR ?"
+            [disabled]="busy()"
+          ></textarea>
+          <mat-hint align="end">{{ draft().length }}/1500</mat-hint>
+        </mat-form-field>
+        <button
+          mat-fab
+          color="primary"
+          type="submit"
+          aria-label="Envoyer"
+          [disabled]="!canSend()"
+        >
+          <mat-icon>send</mat-icon>
+        </button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
