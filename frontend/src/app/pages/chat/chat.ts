@@ -62,7 +62,7 @@ export class Chat {
   private readonly snack = inject(MatSnackBar);
 
   protected readonly turns = signal<Turn[]>([]);
-  protected readonly draft = signal('');
+  protected readonly draft = signal("Quel rapport entre la théorie polyvagal et l'intelligence relationnelle");
   protected readonly busy = signal(false);
   protected readonly sessionId = signal<string | null>(null);
 
