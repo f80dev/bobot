@@ -24,6 +24,14 @@ Chaque fichier `.md` = un thème. Les sections délimitées par `## ` deviennent
 | `emdr-therapies-integrees-comparaison.md` | Brainspotting, MOSAIC, hypnose, intégrative |
 | `emdr-enfants-adolescents.md` | Rolling 2024, Sorel 2022, Bozkurt, protocoles adaptés |
 | `emdr-english-corpus.md` | Index des articles en langue anglaise (Frontiers, Healthcare, EJPT…) |
+| `emdr-epistemologie-ecr-machado-2024.md` | Article 1 Machado — critique des ECR pour évaluer l'EMDR |
+| `emdr-composants-uniques-bdas.md` | BDAS seule variable active isolée ; risques des versions « copycat » |
+| `controverses-stabilisation-faux-souvenirs.md` | Stabilisation vs trauma + faux souvenirs vs souvenirs recouvrés |
+| `emdr-these-lavandier-2023-time.md` | Protocole TIM-E (réalité virtuelle + EMDR) pour TSPT complexe |
+| `modeles-forces-optimisme-regourd-laizeau.md` | Trois modèles de forces + triade conceptuelle de l'optimisme |
+| `emdr-these-dellucci-2016-integrative.md` | Approche intégrative EMDR × TDSP, modèle bi-axial émotion × lien |
+| `emdr-protocole-sba-ehpad.md` | Design opérationnel SBA en EHPAD (CHU Nice, 15 résidents, suivi long) |
+| `emdr-groupe-soma-deuil-traumatique.md` | Angle deuil traumatique + contexte sociopolitique de Soma |
 
 ## Ajouter une fiche
 
