@@ -26,6 +26,16 @@ Le modèle IR repose sur un socle à cinq étages théoriques :
 - **La neurobiologie du trauma (van der Kolk 2018, Perry, Mac Lean 1972)** : reconnaissance de la hiérarchisation phylogénétique du système nerveux (cerveau triunique). Plus les structures sont anciennes, plus elles fonctionnent de façon automatique ; plus elles sont récentes (hémisphères cérébraux), plus elles fonctionnent de façon consciente. La mémoire traumatique n'est pas indélébile : la neuroplasticité permet au cerveau de se reconfigurer de façon pérenne.
 - **La dissociation péri-traumatique** : mécanisme fondamental d'adaptation neurobiologique qui rend compte du développement de sous-compartiments de la personnalité organisés autour de nouveaux équilibres internes (déséquilibres adaptatifs). L'IR reconnaît ici la **théorie de la dissociation structurelle** de Van der Hart et Nijenhuis (2011) comme cadre de référence.
 
+### Articulation théorique intégrée et phasage
+
+L'IR est structurée comme une psychothérapie **phasée en trois étapes**, conformément aux recommandations internationales (ISTSS, NICE, OMS) :
+
+- **Phase 1 — Stabilisation** : construction de l'alliance, apprentissage des outils d'autorégulation, sécurisation du SNA, validation des 6 critères de sécurité avant exposition.
+- **Phase 2 — Traitement du trauma** : exposition contrôlée et retraitement des mémoires traumatiques, soutenue par la corégulation et la métacognition.
+- **Phase 3 — Consolidation / Réintégration** : restauration des croyances fondamentales (sécurité, confiance, contrôle/valeur), réouverture relationnelle.
+
+Cinq piliers scientifiques irriguent ces trois phases : IFS (cartographie des parties protectrices et blessées), TPV (lecture en temps réel du SNA), théorie de l'attachement (base sécure), métacognition selon Deirdre Fay (échelle MC -1 → 4b), neurosciences du trauma et TAI (relance par ancrage somatique et corégulation).
+
 ### Concepts-clés du modèle
 
 - **Self** (IFS) : centre de la personnalité, capable de conscience, de calme, de confiance, de compassion, de courage.
@@ -33,15 +43,61 @@ Le modèle IR repose sur un socle à cinq étages théoriques :
 - **Corégulation** : interaction avec un autre humain dont le SN est régulé, qui permet au SN dérégulé d'un patient exposé à un danger de revenir à la régulation. Vecteur de la voie bottom-up. Levier thérapeutique principal pour les troubles de l'attachement.
 - **Autorégulation** : travail top-down, mobilisant les structures corticales récentes. Cible pour les troubles accessibles via le paradigme des parties (TSPT simple).
 - **Dissociation péri-traumatique** : mécanisme d'adaptation qui fragmente le psychisme en sous-compartiments. Plus fondamentale que la mémoire traumatique (qui en procède par fragmentation des éléments du souvenir). Inscription d'emblée sous forme de mémoires dissociatives dans les troubles précoces.
-- **Métacognition** : capacité d'être conscient des opérations mentales et des états mentaux pour soi et pour l'autre (Brown & Elliott, 2016). D'autant plus développée que l'attachement est sécure. Outil-clé de l'IR dans les situations où la corégulation est indiquée mais où le système de défense du patient manifeste une opposition.
+- **Métacognition (MC)** : capacité d'être conscient des opérations mentales et des états mentaux pour soi et pour l'autre (Brown & Elliott, 2016 ; Deirdre Fay). L'IR opérationnalise une **échelle graduée MC -1 → MC 4b** : récit désincarné (MC -1/0), attention somatique élémentaire (MC 1/2), description somatique précise (MC 3), conscience de soi en présence de l'autre (MC 4a), boucle relationnelle complète (MC 4b). D'autant plus développée que l'attachement est sécure.
 - **Association relationnelle** : méthodologie originale de l'IR qui permet de traiter directement la dissociation en utilisant la corégulation comme médiateur de l'association neurobiologique entre deux informations maintenues à distance par le traumatisme.
 - **Engagement thérapeutique conscient** : posture du thérapeute qui s'engage physiquement et/ou cognitivement (voire émotionnellement) vis-à-vis de son patient à partir de la mise en œuvre de la corégulation. La neutralité fréquemment prônée est contre-productive : elle est perçue par le SNA du patient comme analogue à l'engagement déficient de sa propre figure d'attachement. L'engagement doit être rigoureux pour éviter les projections contre-transférentielles.
+- **Question clé de réorientation somato-relationnelle (QQPDTC)** : « Qu'est-ce qui se passe dans ton corps quand tu sais que je sais ça de toi ? ». Formule emblématique de la bascule de l'expérience du patient, du récit intellectuel vers l'expérience somatique relationnelle présente.
 
-### Trois caractéristiques fondamentales du modèle
+### Cerveau du Haut vs Cerveau du Bas
 
-- **C'est une psychothérapie neurobiologique (PNB)** : les méthodes répondent à une représentation du psychisme et de ses traumatismes tels que les proposent les avancées récentes en neurosciences ; elles visent, via la neuroplasticité, à reprogrammer le SN. Le corps est le théâtre d'action. L'objectif : tirer parti de la blessure psychique pour permettre la mise en cohérence corps-esprit via un SN qui retrouve sa capacité à se réguler.
-- **C'est une psychothérapie associative** : l'objectif IR s'envisage sur deux plans — clinique (amélioration des symptômes) et neurobiologique (traiter la dissociation). La neuroplasticité permet ce travail d'association. Il ne s'agit pas d'un travail symbolique ou de suppression de mémoires épisodiques traumatiques.
-- **Elle dispose d'outils spécifiques** : la métacognition, l'association relationnelle, l'engagement thérapeutique conscient, le recalibrage du SNA inspiré de Deborah Dana, la mobilisation de la voie bottom-up via la corégulation.
+L'IR opérationnalise la hiérarchie phylogénétique du SN en deux niveaux :
+
+- **Cerveau du Haut** (processus explicites) : néocortex et cortex préfrontal ; langage verbal, logique, analyse intellectuelle, restructuration cognitive, mentalisation.
+- **Cerveau du Bas** (processus implicites) : tronc cérébral, système limbique (amygdale), SNA. Mémoire traumatique implicite, réflexes de survie, réponses neurovégétatives, sensations corporelles brutes (pression thoracique, boule au ventre, constriction de la gorge, variations thermiques).
+
+Sous l'emprise du Cerveau du Bas (flashback, panique sympathique, effondrement vagal dorsal), les voies cortico-limbiques descendantes sont inhibitrices : le Cerveau du Haut est « hors ligne ». Toute tentative d'adresser le patient via des explications cognitives, de la réassurance logique ou du débat d'idées constitue une **discordance neurobiologique** qui accentue l'isolement, l'incompréhension et l'impuissance du patient.
+
+### Principe cardinal : « Connect before correct »
+
+En IR, la régulation neurobiologique de l'état d'activation et la création d'une connexion d'attachement sécure **priment** sur toute intervention de restructuration cognitive. La corégulation autonomique et le rétablissement du lien relationnel sécure dans l'instant présent constituent les prérequis biologiques indispensables à toute réévaluation cognitive ou intégration mémorielle. Intervenir sur le Cerveau du Haut sans avoir préalablement régulé et connecté le Cerveau du Bas bloque le processus thérapeutique et expose le patient à un risque élevé de retraumatisation.
+
+### Grille diagnostique : les 4 quadrants IR
+
+L'IR propose une grille clinique croisant l'état du SNA et la sécurité relationnelle perçue, structurée en quatre quadrants :
+
+- **Cadran 1 — Autorégulation (modèle IFS / sécurité élevée)** : patient en zone de tolérance avec sécurité perçue élevée (≥ 7/10). Cerveau du Haut et Cerveau du Bas en communication fluide. Le patient peut observer ses parties internes sans submersion. Manifestations corporelles : respiration ample et abdominale, tonus modulé, posture souple, contact visuel fluide, prosodie chaleureuse.
+- **Cadran 2 — Corégulation consciente (Protocole du Baudrier)** : sécurité relationnelle suffisante avec le thérapeute, mais anticipation d'une décompensation à l'approche du noyau traumatique. Le Cerveau du Bas perçoit la proximité de la mémoire implicite comme une menace d'engloutissement. Le thérapeute sert de point d'ancrage extérieur (comme un baudrier d'escalade) pour permettre au patient d'avancer un pied vers le souvenir tout en gardant un pied ancré dans la relation.
+- **Cadran 3 — Corégulation physique et recalibration neurobiologique (Protocole MENU)** : patient submergé par une bascule brutale du SNA hors de la zone de tolérance. Soit en hyperactivation sympathique (fuite/combat/panique : respiration haute et saccadée, mâchoires serrées, hypertonie, agitation motrice, pupilles dilatées, flush), soit en hypoactivation vagale dorsale (effondrement/figement : affaissement postural, perte du tonus axial, voix étouffée, regard fixe, pâleur, ralentissement psychomoteur).
+- **Cadran 4 — La Bulle, corégulation cognitive et métacognition** : fausse sécurité par intellectualisation. Le patient utilise le Cerveau du Haut (théorisation, détachement) comme stratégie protectrice pour ne pas contacter les charges somatiques du Cerveau du Bas. Signes : débit verbal rapide, récit désincarné, ton neutre/professoral. Le thérapeute s'interdit d'alimenter le débat théorique et utilise la grille métacognitive pour accompagner la conscience du patient du niveau narratif vers le niveau somato-relationnel direct.
+
+### Protocoles opérationnels
+
+- **Protocole du Baudrier (Cadran 2)** : le thérapeute joue le rôle de point d'ancrage extérieur, analogue au partenaire d'escalade, pour permettre au patient d'approcher graduellement la mémoire traumatique tout en maintenant l'ancrage relationnel.
+- **Protocole MENU (Cadran 3, hyperactivation)** : Mouvement et prosodie (voix posée, débit ralenti, fréquence abaissée pour entraîner le vague), Énergie et distance (élargir l'espace physique, posture ancrée), Neutralisation visuelle (regard doux, non intrusif mais stable), Unité Respiratoire / co-respiration (expirations allongées). La différenciation pour l'hypoactivation vagale dorsale (effondrement) exige une chaleur prosodique stimulante, des micro-mouvements (orteils, poignets), une proximité physique accrue et une co-inspiration marquée.
+- **Miroir Relationnel (Phase 3)** : le thérapeute valide l'expérience émotionnelle et la logique de la partie protectrice sans jamais valider la croyance limitante ou la dogme traumatique. Permet de déconstruire les croyances post-traumatiques fondamentales : sécurité (« le monde est dangereux »), confiance (« les autres ne sont pas fiables »), contrôle/valeur (« je n'ai aucun pouvoir / je suis sale et coupable »).
+- **Contact physique somatique avec consentement explicite** : utilisé principalement pour soutenir l'ancrage corporel face à l'effondrement dorsal (appui scapulaire, omoplate). Exige un protocole de consentement explicite, verbal et répétitif (« est-ce que ce serait ok si… », « comment est la pression ? », « as-tu besoin de plus ou de moins ? »). Nécessite un cadre supervisé et une formation préalable.
+
+### Six critères de sécurité avant exposition (passage Phase 1 → Phase 2)
+
+Conformément aux recommandations internationales (ISTSS, NICE, OMS) :
+
+1. Capacité d'identification émotionnelle (le patient peut identifier et nommer ses émotions sans submersion immédiate).
+2. Maîtrise d'au moins 2 stratégies d'autorégulation en dehors des séances (ancrage sensori-moteur, cohérence cardiaque, lieu sûr, etc.).
+3. Ancrage face aux déclencheurs (capacité à tolérer une activation modérée et revenir à l'ici et maintenant).
+4. Disponibilité de ressources internes (qualités, lieu sûr) et externes (soutien social, cadre de vie stable).
+5. Consentement libre, éclairé et explicite pour aborder le souvenir traumatique direct.
+6. Stabilité de l'environnement et maîtrise des comportements de craving et de consommation.
+
+### Pièges cliniques et impolitesse biologique
+
+L'**impolitesse biologique** désigne toute demande clinique du thérapeute en inadéquation flagrante avec l'état neurobiologique du SNA du patient : par exemple, demander de rationaliser (Cerveau du Haut) à un patient en figement vagal dorsal ou en rage sympathique ; ou demander d'observer des sensations somatiques profondes (Cerveau du Bas) à un patient dont la Bulle est la seule protection contre un effondrement psychotique ou dissociatif. Tenter de briser la Bulle par la confrontation intellectuelle ou faire entrer un patient en force dans son souvenir traumatique sans corégulation préalable déclenche des fuites émotionnelles massives, des décompensations, de la dissociation sévère ou des passages à l'acte autodestructeurs.
+
+Erreurs de guidage clinique fréquentes, presque toujours liées à la réactivité neurobiologique du thérapeute lui-même (contre-transfert corporel) :
+
+- **Précipiter l'accès au trauma** (urgence sympathique, anxiété de « séance efficace »).
+- **Nourrir le débat intellectuel dans la Bulle** (recrutement dans le Cerveau du Haut du patient, peur de contacter le vide somatique).
+- **Peur du vide et du figement dorsal** (silence du figement réactive les schémas d'impuissance du thérapeute).
+- **Oubli de la présence somatique du thérapeute** (apnée, tension musculaire, regard fixe = signal neurobiologique de danger qui empêche la corégulation).
 
 ### Clinique : repérer le niveau de dissociation et adapter
 
@@ -52,11 +108,17 @@ Le thérapeute n'aborde pas le patient avec un a priori sur le niveau de dissoci
 
 Avec cette méthodologie, il apparaît que le plus souvent le SN des patients nécessite beaucoup de corégulation avant de pouvoir accéder à l'autorégulation. Ce constat est cohérent avec la hiérarchisation bottom-up du SN.
 
+### Trois caractéristiques fondamentales du modèle
+
+- **C'est une psychothérapie neurobiologique (PNB)** : les méthodes répondent à une représentation du psychisme et de ses traumatismes tels que les proposent les avancées récentes en neurosciences ; elles visent, via la neuroplasticité, à reprogrammer le SN. Le corps est le théâtre d'action. L'objectif : tirer parti de la blessure psychique pour permettre la mise en cohérence corps-esprit via un SN qui retrouve sa capacité à se réguler.
+- **C'est une psychothérapie associative** : l'objectif IR s'envisage sur deux plans — clinique (amélioration des symptômes) et neurobiologique (traiter la dissociation). La neuroplasticité permet ce travail d'association. Il ne s'agit pas d'un travail symbolique ou de suppression de mémoires épisodiques traumatiques.
+- **Elle dispose d'outils spécifiques** : la métacognition, l'association relationnelle, l'engagement thérapeutique conscient, le recalibrage du SNA inspiré de Deborah Dana, la mobilisation de la voie bottom-up via la corégulation, les protocoles Baudrier, MENU et Miroir Relationnel.
+
 ### Distinction avec les modèles voisins
 
 - **Psychanalyse** : différence par l'ancrage neuroscientifique explicite et la mobilisation du corps.
 - **TCC** : différence par l'importance accordée à la dimension relationnelle et corporelle, et au trauma complexe.
-- **EMDR** : l'EMDR est une technique (stimulation bilatérale + protocole standard) ; l'IR est un cadre relationnel et neurobiologique. L'IR ne s'oppose pas à l'EMDR : elle la considère comme une modalité particulière de stimulation bottom-up du SN.
+- **EMDR** : l'EMDR est une technique (stimulation bilatérale + protocole standard) ; l'IR est un cadre relationnel et neurobiologique. L'IR ne s'oppose pas à l'EMDR : elle la considère comme une modalité particulière de stimulation bottom-up du SN. Dans la perspective IR, l'EMDR stimule le Traitement Adaptatif de l'Information (TAI) en intrapersonnel ; l'IR montre que c'est l'expérience de la corégulation neurobiologique au sein de la relation thérapeutique qui débloque et relance le TAI, le lien sécure servant de catalyseur biologique.
 - **IFS pur** : l'IR prolonge l'IFS en y intégrant explicitement la corégulation, la métacognition et l'engagement thérapeutique conscient. Des praticiens formés aux deux modèles considèrent l'IR plus systématique et plus puissant pour le travail avec les clients qui ont du mal à se détacher de leurs parties, et plus efficace pour les traumatismes préverbaux et la mémoire traumatique somatique.
 - **DBR, Gestalt, NBIP** : positionnement comparé dans le chapitre « IR en dialogue » du livre.
 
@@ -86,6 +148,7 @@ Le livre précédent, co-écrit avec C. Krumb, *La Force de la Confiance*, prés
 - Le modèle est récent (fin 2017) ; les données probantes longitudinales sont en cours de constitution.
 - L'engagement thérapeutique conscient exige une méthodologie très rigoureuse pour éviter les projections contre-transférentielles ; le risque iatrogène est explicitement mentionné.
 - La méthode repose sur la capacité du thérapeute à détecter les signes cliniques du niveau de dissociation ; cette lecture demande une formation spécifique, non substituable par la lecture du seul ouvrage.
+- Les protocoles de contact physique somatique (appui scapulaire, etc.) exigent un cadre supervisé, un consentement explicite verbal répétitif, et ne sauraient être improvisés sans formation préalable.
 
 ### Concepts adjacents cités
 
@@ -95,12 +158,17 @@ Le livre précédent, co-écrit avec C. Krumb, *La Force de la Confiance*, prés
 - Reprogrammation du SN via la neuroplasticité
 - Voies bottom-up et top-down de la régulation
 - Sécurité interne (objectif thérapeutique)
+- Croyances post-traumatiques fondamentales (sécurité, confiance, contrôle/valeur)
+- Cerveau du Haut / Cerveau du Bas (métaphore opérationnelle, équivalente au cerveau triunique de Mac Lean)
+- Impolitesse biologique (concept original IR)
+- Question clé de réorientation somato-relationnelle (QQPDTC)
 
 ### Sources
 
-- Site officiel du modèle IR, par Self Therapie Formation (STF) : https://selftherapie.com/le-modele-intelligence-relationnelle/ et https://selftherapie.com/fondements-du-modele/ (page fondements très détaillée, 21 334 caractères).
+- Site officiel du modèle IR, par Self Therapie Formation (STF) : https://selftherapie.com/le-modele-intelligence-relationnelle/ et https://selftherapie.com/fondements-du-modele/ (page fondements très détaillée).
 - Page fondateur : https://selftherapie.com/qui-sommes-nous/fondateur/
 - Page livre à paraître : https://selftherapie.com/nouveau-livre-du-dr-francois-le-doze/
+- **Document interne STF** « Rapport Clinique IR - Structure Markdown » (Google Doc, AF10 Drive pro, 17 ko, modifié 2026-10-02) : apporte le phasage en 3 phases, le principe « Connect before correct », la grille des 4 quadrants IR, les protocoles Baudrier et MENU, l'échelle MC -1 → MC 4b de Deirdre Fay, les 6 critères de sécurité ISTSS/NICE/OMS et les pièges cliniques (impolitesse biologique, erreurs de contre-transfert corporel).
 - Témoignages publics : Susan Mac Connell (IFS Senior Lead Trainer), A. Andrews-Alexander (MD, MHSc, formée niveau 3 IFS, IFS somatique, IFS trauma, ex-assistante IFSI).
-- Bibliographie citée par STF : Schwartz 1995 (*Internal Family Systems Therapy*, Guilford) ; Porges 2011 (*The Polyvagal Theory*, Norton) ; Brown & Elliott 2016 (*Attachment Disturbances in Adults*, Norton) ; MacLean 1972 (cerveau triunique) ; Nijenhuis & Van der Hart 2011 (dissociation structurelle, *Journal of Trauma & Dissociation* 12(4) : 416-445) ; Perry (Neurosequential Model) ; van der Kolk 2018 (*Le corps n'oublie rien*) ; Dana 2018 ; Deirdre Fay.
+- Bibliographie citée par STF : Schwartz 1995 (*Internal Family Systems Therapy*, Guilford) ; Porges 2011 (*The Polyvagal Theory*, Norton) ; Brown & Elliott 2016 (*Attachment Disturbances in Adults*, Norton) ; MacLean 1972 (cerveau triunique) ; Nijenhuis & Van der Hart 2011 (dissociation structurelle, *Journal of Trauma & Dissociation* 12(4) : 416-445) ; Perry (Neurosequential Model) ; van der Kolk 2018 (*Le corps n'oublie rien*) ; Dana 2018 ; Deirdre Fay ; recommandations ISTSS, NICE 2013, OMS.
 - Certificat Qualiopi RNQ-20/04/035-02.
