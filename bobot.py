@@ -141,7 +141,10 @@ TOOLS = {
 # Agent loop (max 3 iters, hand-rolled ReAct)
 # ---------------------------------------------------------------------------
 
-_DECISION_PROMPT = """Tu es un agent ReAct pour Psybot. Tu reçois un message utilisateur et une trajectoire (vide au début).
+_DECISION_PROMPT = """Tu es un agent ReAct pour Psybot. L'utilisateur te pose la question suivante :
+
+__USER_MESSAGE__
+
 Tu dois choisir UNE action par tour.
 
 OUTILS ABSENTS :
@@ -150,7 +153,7 @@ OUTILS ABSENTS :
 - {{"action": "finish", "answer": "..."}}             pour répondre à l'utilisateur
 
 RÈGLES STRICTES :
-1. Pour toute question portant sur EMDR, attachement, intelligence relationnelle, théorie polyvagale, blessure psychique, dissociation, trauma → tu DOIS appeler `search_knowledge` EN PREMIER. C'est la règle n°1.
+1. Pour toute question portant sur EMDR, attachement, intelligence relationnelle, théorie polyvagale, blessure psychique, dissociation, trauma → tu DOIS appeler `search_knowledge` EN PREMIER. C'est la règle n°1. Tu dois t'appuyer sur la question de l'utilisateur ci-dessus pour formuler ta requête `query` (reformule-la en mots-clés pertinents si besoin).
 2. Tu n'appelles `detect_emergency` QUE si la question contient explicitement des marqueurs de détresse (suicide, mourir, en finir, plus envie de vivre, …). Sinon, ne le fais pas — il consomme un tour pour rien.
 3. Tu ne fais `finish` qu'après avoir obtenu des passages RAG (ou confirmé que la question est hors corpus). Jamais de finish à vide au premier tour.
 4. Tu réponds UNIQUEMENT par un objet JSON, rien d'autre (pas de markdown, pas de texte autour).
@@ -197,8 +200,14 @@ __TRAJECTORY__
 Prochaine action (JSON strict) :"""
 
 
-def _agent_decide(client: Any, trajectory: list[dict]) -> dict[str, Any]:
-    """Ask the LLM for the next action. Returns parsed JSON dict."""
+def _agent_decide(client: Any, user_message: str, trajectory: list[dict]) -> dict[str, Any]:
+    """Ask the LLM for the next action. Returns parsed JSON dict.
+
+    The user's message is injected into the decision prompt on every iteration
+    (matches the DSPy ReAct pattern where the original `question` stays as an
+    InputField next to `trajectory`, not just once at the start). This is what
+    lets the LLM ground tool calls in the actual question rather than guessing.
+    """
     import json
 
     traj_str = "\n".join(
@@ -206,8 +215,14 @@ def _agent_decide(client: Any, trajectory: list[dict]) -> dict[str, Any]:
         for i, t in enumerate(trajectory)
     ) or "(vide)"
 
+    prompt = (
+        _DECISION_PROMPT
+        .replace("__USER_MESSAGE__", user_message.strip() or "(pas de message)")
+        .replace("__TRAJECTORY__", traj_str)
+    )
+
     raw = client.chat(
-        messages=[{"role": "user", "content": _DECISION_PROMPT.replace("__TRAJECTORY__", traj_str)}],
+        messages=[{"role": "user", "content": prompt}],
         system="Tu es un agent ReAct strict. Tu réponds UNIQUEMENT en JSON.",
         temperature=0.0,
         max_tokens=400,
@@ -241,9 +256,10 @@ def _run_agent(
     emergency_message = ""
     final_answer = ""
 
-    # Optional: include a short history hint in the first iteration.
+    # ReAct loop — at every iteration the LLM sees the original user message
+    # and the trajectory so far (DSPy ReAct pattern).
     for it in range(MAX_ITERS):
-        decision = _agent_decide(client, trajectory)
+        decision = _agent_decide(client, message, trajectory)
 
         action = decision.get("action")
         args = decision.get("args") or {}

@@ -177,3 +177,35 @@ def test_decision_prompt_replaces_trajectory_placeholder():
     out = _DECISION_PROMPT.replace("__TRAJECTORY__", "step 1: hello")
     assert "step 1: hello" in out
     assert "__TRAJECTORY__" not in out
+
+
+def test_decision_prompt_injects_user_message():
+    # Anti-regression: the user's question must reach the LLM at every iteration,
+    # not just be a string we silently drop. Without this, the agent loop has no
+    # way to ground tool calls in the actual question and answers the wrong one
+    # (verified live on 2026-10-02 — Q2 'déroulé séance EMDR' was being answered
+    # with the EMDR definition because the LLM only saw the trajectory, not the
+    # original question).
+    from bobot import _DECISION_PROMPT
+
+    prompt = (
+        _DECISION_PROMPT
+        .replace("__USER_MESSAGE__", "Comment se déroule une séance d'EMDR ?")
+        .replace("__TRAJECTORY__", "(vide)")
+    )
+    assert "Comment se déroule une séance d'EMDR ?" in prompt
+    assert "__USER_MESSAGE__" not in prompt
+    assert "__TRAJECTORY__" not in prompt
+
+
+def test_agent_decide_signature_takes_user_message():
+    # The signature must include user_message; calling without it is a programming
+    # error and should fail loudly.
+    import inspect
+    from bobot import _agent_decide
+
+    sig = inspect.signature(_agent_decide)
+    params = list(sig.parameters.keys())
+    assert "user_message" in params
+    assert "client" in params
+    assert "trajectory" in params
